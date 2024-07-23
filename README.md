@@ -8,7 +8,7 @@
 </div>
 
 > [!NOTE]
-> This product is Final Class Assignment.
+> You need OpenAI API key.
 
 # Demo
 ## Playing Screen
