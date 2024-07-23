@@ -10,6 +10,8 @@
 > [!NOTE]
 > You need OpenAI API key.
 
+![teaser](./images/teaser.png)
+
 # Demo
 ## Playing Screen
 ![demo](./images/demo.png)
@@ -18,8 +20,6 @@
 ![gradio](./images/gradio.png)
 
 # Technology
-![teaser](./images/teaser.png)
-### Backend
 - Python(FastAPI, Pillow, OpenAI)
 - [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)
 - [VMagicMirror](https://github.com/malaybaku/VMagicMirror)
