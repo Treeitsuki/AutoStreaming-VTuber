@@ -11,10 +11,14 @@
 > This product is Final Class Assignment.
 
 # Demo
+### Playing Screen
 ![demo](./images/demo.png)
+
+### Demo using gradio
 ![gradio](./images/gradio.png)
 
 ## Technology
+![teaser](./images/teaser.png)
 ### Backend
 - Python(FastAPI, Pillow)
 - VOICEVOX ENGINE
