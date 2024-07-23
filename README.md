@@ -12,19 +12,19 @@
 
 ![teaser](./images/teaser.png)
 
-# Demo
+# 🖥️ Demo
 ## Playing Screen
 ![demo](./images/demo.png)
 
 ## Demo using gradio
 ![gradio](./images/gradio.png)
 
-# Technology
+#  🛠️ Technology
 - Python(FastAPI, Pillow, OpenAI)
 - [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)
 - [VMagicMirror](https://github.com/malaybaku/VMagicMirror)
 
-# Running code
+# 🧾 Running code
 1. Clone my repository
     ```
     git clone https://github.com/Treeitsuki/AutoStreaming-VTuber.git
