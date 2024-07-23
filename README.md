@@ -11,20 +11,20 @@
 > This product is Final Class Assignment.
 
 # Demo
-### Playing Screen
+## Playing Screen
 ![demo](./images/demo.png)
 
-### Demo using gradio
+## Demo using gradio
 ![gradio](./images/gradio.png)
 
-## Technology
+# Technology
 ![teaser](./images/teaser.png)
 ### Backend
 - Python(FastAPI, Pillow, OpenAI)
 - [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)
 - [VMagicMirror](https://github.com/malaybaku/VMagicMirror)
 
-## Running code
+# Running code
 1. Clone my repository
     ```
     git clone https://github.com/Treeitsuki/AutoStreaming-VTuber.git
