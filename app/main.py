@@ -7,11 +7,14 @@ from src.screenshot import take_screenshot, get_latest_screenshot
 
 # 画面キャプチャの準備時間と間隔
 preparation = 5
-interval = 60
+interval = 120
+
+#キャラ選択
+spaker = "3"    #ずんだもん
 
 def process_and_speak(image):
     response_text = gen_chat_response_with_gpt4(image)
-    vvox_mic(response_text)
+    vvox_mic(spaker, response_text)
     return response_text
 
 def screenshot():

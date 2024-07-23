@@ -2,7 +2,7 @@ import requests
 import json
 import pyaudio
 
-def vvox(text):
+def vvox(speaker, text):
     # エンジン起動時に表示されているIP、portを指定
     host = "127.0.0.1"
     port = 50021
@@ -10,7 +10,7 @@ def vvox(text):
     # 音声化する文言と話者を指定(3で標準ずんだもんになる)
     params = (
         ('text', text),
-        ('speaker', 3),
+        ('speaker', speaker),
     )
     
     # 音声合成用のクエリ作成
@@ -48,7 +48,7 @@ import numpy as np
 import io
 import wave
 
-def vvox_mic(text):
+def vvox_mic(speaker, text):
     # エンジン起動時に表示されているIP、portを指定
     host = "127.0.0.1"
     port = 50021
@@ -56,7 +56,7 @@ def vvox_mic(text):
     # 音声化する文言と話者を指定(3で標準ずんだもんになる)
     params = (
         ('text', text),
-        ('speaker', 3),
+        ('speaker', speaker),
     )
     
     # 音声合成用のクエリ作成
