@@ -1,22 +1,24 @@
+import gradio as gr
 import threading
 import time
 from PIL import Image
-from src.vvox import vvox_mic
+from src.vvox import vvox
 from src.api import gen_chat_response_with_gpt4
-from src.screenshot import take_screenshot, get_latest_screenshot
+from src.screenshot import take_screenshot
+from src.screenshot import get_latest_screenshot
 
-# 画面キャプチャの準備時間と間隔
-preparation = 5
-interval = 60
+# 画面キャプチャの間隔
+interval = 120
 
 def process_and_speak(image):
+    if isinstance(image, str):
+        image = Image.open(image)
     response_text = gen_chat_response_with_gpt4(image)
-    vvox_mic(response_text)
+    vvox(response_text)
     return response_text
 
 def screenshot():
     while True:
-        time.sleep(preparation)
         take_screenshot()
         time.sleep(interval)
 
@@ -31,14 +33,18 @@ def main():
     screenshot_thread = threading.Thread(target=screenshot, daemon=True)
     screenshot_thread.start()
     
-    while True:
+    # Gradioの設定
+    def update(image):
         latest_screenshot = get_image_from_screenshot()
         if latest_screenshot:
-            response = process_and_speak(latest_screenshot)
-            print(response)
-        else:
-            print("No image available")
-        time.sleep(interval)
+            return process_and_speak(latest_screenshot)
+        return "No image available"
+
+    image = gr.Image(label="Image File", type="pil")
+    output = gr.Textbox(label="Explanation")
+
+    app = gr.Interface(fn=update, inputs=image, outputs=output, live=True)
+    app.launch()
 
 if __name__ == "__main__":
     main()
