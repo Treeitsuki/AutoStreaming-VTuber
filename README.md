@@ -21,8 +21,8 @@
 ![teaser](./images/teaser.png)
 ### Backend
 - Python(FastAPI, Pillow, OpenAI)
-- VOICEVOX ENGINE
-- VMagicMirror
+- [VOICEVOX ENGINE](https://github.com/VOICEVOX/voicevox_engine)
+- [VMagicMirror](https://github.com/malaybaku/VMagicMirror)
 
 ## Running code
 1. Clone my repository
