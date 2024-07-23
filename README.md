@@ -20,7 +20,7 @@
 ## Technology
 ![teaser](./images/teaser.png)
 ### Backend
-- Python(FastAPI, Pillow)
+- Python(FastAPI, Pillow, OpenAI)
 - VOICEVOX ENGINE
 - VMagicMirror
 
