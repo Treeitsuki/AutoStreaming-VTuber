@@ -16,10 +16,13 @@ def process_and_speak(image):
         return response_text
 
 def main():
-    image = gr.Image(label="Image File", type="pil")
-    output = gr.Textbox(label="Explanation")
+    with gr.Blocks() as demo:
+        image = gr.Image(label="Image File", type="pil")
+        output = gr.Textbox(label="Explanation")
 
-    gr.Interface(fn=process_and_speak, inputs=image, outputs=output).launch()
+        image.change(fn=process_and_speak, inputs=image, outputs=output)
+
+    demo.launch()
 
 if __name__ == "__main__":
     main()
