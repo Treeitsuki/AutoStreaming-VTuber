@@ -28,12 +28,14 @@
 1. Clone my repository
     ```
     git clone https://github.com/Treeitsuki/AutoStreaming-VTuber.git
-    cd AutoStreaming-VTuber
     ```
-1. Set up VMagicMirror
+1. Set up [VMagicMirror](https://malaybaku.github.io/VMagicMirror/)
+
+    https://malaybaku.github.io/VMagicMirror/download/
+
+1. Run ShellScript
     ```
-    docker-compose up -d
+    bash main.sh
     ```
-1. Set up your OpenAI-APIKey
-    
+
 
