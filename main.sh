@@ -1,5 +1,6 @@
 #Create conda environment
 conda env create -f conda_environment.yaml
+conda activate autostreaming
 
 #Activate voicevox
 cd voicevox_engine
