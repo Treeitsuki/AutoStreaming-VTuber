@@ -1,4 +1,4 @@
-name: gradio
+name: autostreaming
 channels:
   - defaults
 dependencies:
