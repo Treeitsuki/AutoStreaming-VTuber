@@ -8,7 +8,7 @@
 </div>
 
 > [!NOTE]
-> You need OpenAI API key.
+> You need a OpenAI API key.
 
 ![teaser](./images/teaser.png)
 
