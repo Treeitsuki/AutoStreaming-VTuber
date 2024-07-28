@@ -12,7 +12,7 @@
 
 ![teaser](./images/teaser.png)
 
-This project is a system that allows VTuber to recognize their own screen and automatically play the game live.
+This project is a application that allows VTuber to recognize their own screen and automatically play the game live.
 
 # 🖥️ Demo
 ## Playing Screen
